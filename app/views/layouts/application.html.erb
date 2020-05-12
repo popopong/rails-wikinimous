@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <div class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <div class="d-inline-flex">Wikinomous</div>
+      <div class="d-inline-flex"><%= link_to "Create a new article", new_article_path %>
+</div>
+    </div>
     <%= yield %>
   </body>
 </html>

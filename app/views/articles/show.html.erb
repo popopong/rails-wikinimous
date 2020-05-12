@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+
+<%= link_to "Edit this article", edit_article_path %>
+<%= link_to "Delete this article", article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title}?" }, class: "btn btn-primary" %>
+<%= link_to "Homepage", articles_path %>
